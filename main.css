@@ -1,0 +1,54 @@
+body {
+    background: #F8EEFF;
+    background-image: url(./assets/images/background-pattern-desktop.svg);
+    background-position: top;
+    background-repeat: repeat-x;
+    color: darkblue;
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.faq-card {
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 37.5rem;
+    padding: 20px;
+}
+
+.faq-card .faq-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.faq-card .faq-title i {
+    font-size: 1.5rem;
+    color: #6c63ff;
+}
+
+.accordion-button::after {
+    display: none;
+}
+
+.icon-open {
+    display: none;
+}
+
+.accordion-button:not(.collapsed) .icon-open {
+    display: inline;
+}
+
+.accordion-button:not(.collapsed) .icon-closed {
+    display: none;
+}
+
+.accordion-icon {
+    margin-left: auto;
+}
